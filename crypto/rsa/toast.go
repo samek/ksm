@@ -1,12 +1,13 @@
 package rsa
 
 import (
-	"github.com/89hmdys/toast/crypto"
-	"github.com/89hmdys/toast/rsa"
+	"github.com/samek/toast/crypto"
+	rsa "github.com/samek/toast/rsa"
 )
 
 //RSA/ECB/OAEPPadding
 func OAEPPDecrypt(pub, pri string, ciphertext []byte) ([]byte, error) {
+
 	key, err := rsa.LoadKeyFromPEMByte(
 		[]byte(pub),
 		[]byte(pri),

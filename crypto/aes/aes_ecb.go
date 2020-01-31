@@ -1,8 +1,8 @@
 package aes
 
 import (
-	"github.com/89hmdys/toast/cipher"
-	"github.com/89hmdys/toast/crypto"
+	"github.com/samek/toast/cipher"
+	"github.com/samek/toast/crypto"
 )
 
 func EncryptWithECB(key []byte, plainText []byte) ([]byte, error) {
